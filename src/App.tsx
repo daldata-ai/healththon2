@@ -7,6 +7,7 @@ import Paths from './component/Paths'
 import Price from './component/Price'
 import Timeline from './component/Timeline'
 import TAndC from './component/TAndC'
+import TargetGroup from './component/TargetGroup'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Goals />
       <Paths />
+      <TargetGroup />
       <TAndC />
       <Timeline />
       <Price />

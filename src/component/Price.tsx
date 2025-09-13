@@ -17,7 +17,10 @@ export default function Price() {
           title='إطالة العمر الصحي عبر علم الجينات والتقنيات الحيوية'  
           desc='الأيض الذكي — العلاقة بين التغذية وكفاءة التمثيل الغذائي' 
           desc2='تطوير مؤشر ذكي للعمر الصحي باستخدام المؤشرات الحيوية'
-        />
+              />
+                    <div className="bg-inherit p-4">
+            <img src='bef.svg' alt='bet' className='w-full mx-auto  max-w-4xl' />
+            </div>
         <img src="price end.svg" alt="Prize" className="w-full my-10" />
       </div>
     </div>
@@ -45,7 +48,7 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ title, desc }) => {
   return (
-    <div className="bg-[#a6c2b9]/20 rounded-lg shadow-sx p-3 sm:p-5 m-2 flex-1 w-[320px]">
+    <div className="bg-[#a6c2b9]/20 rounded-lg shadow-sx p-3 sm:p-5 m-2 flex-1 max-w-4xl w-full">
       <p className="text-dark-green text-sm sm:text-base md:text-lg">{title}</p>
       <p className="text-dark-green text-sm sm:text-base md:text-lg">{desc}</p>
     </div>
