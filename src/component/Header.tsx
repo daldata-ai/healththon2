@@ -76,7 +76,7 @@ export default function Component() {
                         style={{ backgroundColor: "#125662" }}
                     >
                         <a href="#" className="pt-6">
-                            <img src="/logo.svg" alt="Logo" className="h-14 px-8" />
+                            <img src="logo.svg" alt="Logo" className="h-14 px-8" />
                         </a>
                         <div className="grid gap-2 px-8">
                             <Link
@@ -119,7 +119,7 @@ export default function Component() {
                 </Sheet>
 
                 <Link href="#" className="hidden lg:flex" prefetch={false}>
-                    <img src="/logo.svg" alt="Logo" className="h-14" />
+                    <img src="logo.svg" alt="Logo" className="h-14" />
                 </Link>
 
                 <NavigationMenu className="hidden lg:flex bg-transparent">

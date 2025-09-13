@@ -5,7 +5,7 @@ export default function Price() {
     <div className='bg-inherit pt-4'>
       <div className="text-center">
   <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-dark-green mb-2">الجوائز</h1>
-        <img src="/price start.svg" alt="Prize" className="w-full" />
+        <img src="price start.svg" alt="Prize" className="w-full" />
         <ComplatePage 
           title='تقليل معدل الوفيات المبكرة'  
           desc='التنبؤ بالفئات الأكثر عرضة للوفاة المبكرة وتحليل الأسباب القابلة للتفادي' 
@@ -18,7 +18,7 @@ export default function Price() {
           desc='الأيض الذكي — العلاقة بين التغذية وكفاءة التمثيل الغذائي' 
           desc2='تطوير مؤشر ذكي للعمر الصحي باستخدام المؤشرات الحيوية'
         />
-        <img src="/price end.svg" alt="Prize" className="w-full my-10" />
+        <img src="price end.svg" alt="Prize" className="w-full my-10" />
       </div>
     </div>
   )
@@ -74,6 +74,6 @@ const ComplatePage: React.FC<ComplatePageProps> = ({ title, desc, desc2 }) => {
 
 const Image = () => {
   return (
-    <img src="/prices.svg" alt="Prize" className="w-3/4 sm:w-2/3 pt-8 max-w-[500px]" />
+    <img src="prices.svg" alt="Prize" className="w-3/4 sm:w-2/3 pt-8 max-w-[500px]" />
   );
 }

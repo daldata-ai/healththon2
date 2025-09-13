@@ -8,7 +8,7 @@ export default function Timeline() {
         {/* Desktop */}
         <source srcSet="/timeline.svg" media="(min-width: 1028px)" />
         {/* Fallback */}
-        <img src="/timeline.svg" alt="Timeline" className="w-full" />
+        <img src="timeline.svg" alt="Timeline" className="w-full" />
       </picture>
     </div>
   )
