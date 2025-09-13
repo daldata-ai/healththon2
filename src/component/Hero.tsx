@@ -13,12 +13,12 @@ export default function Hero() {
     });
 
     const [isMuted, setIsMuted] = useState(true);
-    const videoRef = useRef(null);
+    const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
         const calculateTimeLeft = () => {
             const now = new Date();
-            const difference = TARGET_DATE - now;
+            const difference = TARGET_DATE.getTime() - now.getTime();
             
             if (difference > 0) {
                 const days = Math.floor(difference / (1000 * 60 * 60 * 24));

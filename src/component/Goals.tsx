@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Goals() {
     return (
         <div className="relative flex flex-col items-center justify-center py-4 bg-inherit">

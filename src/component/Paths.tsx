@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 export default function Paths() {
-  const [hoveredCard, setHoveredCard] = useState(null);
+  const [hoveredCard, setHoveredCard] = useState<null | 1 | 2>(null);
   const [isMobile, setIsMobile] = useState(false);
-  const [expandedItems, setExpandedItems] = useState({});
+  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     const checkMobile = () => {
@@ -17,7 +17,7 @@ export default function Paths() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  const toggleAccordion = (cardId, itemId) => {
+  const toggleAccordion = (cardId: string, itemId: string) => {
     const key = `${cardId}-${itemId}`;
     setExpandedItems(prev => ({
       ...prev,

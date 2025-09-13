@@ -1,10 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
-import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
+import { useState, useEffect, type SVGProps } from 'react';
+import { Sheet, SheetTrigger, SheetContent } from "../components/ui/sheet";
+import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "../components/ui/navigation-menu";
+import { Button } from "../components/ui/button";
+import type { JSX } from 'react/jsx-runtime';
 
 // Link component placeholder - replace with your router's Link component
-const Link = ({ href, children, className, prefetch, ...props }) => (
+type LinkProps = {
+    href: string;
+    children: React.ReactNode;
+    className?: string;
+    prefetch?: boolean;
+    [key: string]: any;
+};
+
+const Link = ({ href, children, className, prefetch, ...props }: LinkProps) => (
     <a href={href} className={className} {...props}>
         {children}
     </a>
@@ -173,7 +182,7 @@ export default function Component() {
     );
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
