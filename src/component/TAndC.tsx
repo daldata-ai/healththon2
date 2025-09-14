@@ -69,7 +69,7 @@ export default function TAndC() {
             </motion.span>
             <motion.p 
               className="text-dark-green text-md lg:text-lg leading-relaxed flex-1"
-              initial={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ 

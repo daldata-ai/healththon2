@@ -61,8 +61,8 @@ const Partners = () => {
     >
       <motion.h1 
         className="text-dark-green text-xl sm:text-2xl md:text-3xl lg:text-3xl mb-8 font-bold"
-        initial={{ opacity: 0, x: -50 }}
-        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+        initial={{ opacity: 0, x: 0 }}
+        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 0 }}
         transition={{ duration: 0.6, delay: 0.2, ease: [0.42, 0, 1, 1] }}
       >
         شركاء النجاح
@@ -144,8 +144,8 @@ const Supporters = () => {
     >
       <motion.h1 
         className="text-dark-green text-xl sm:text-2xl md:text-3xl lg:text-3xl mb-8 font-bold"
-        initial={{ opacity: 0, x: 50 }}
-        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: 0 }}
+        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 0 }}
         transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
       >
         الداعمون

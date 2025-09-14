@@ -102,10 +102,10 @@ const Box = ({
     <motion.div 
       ref={boxRef}
       className={`absolute max-w-[350px] ${className}`}
-      initial={{ opacity: 0, x: index % 2 === 0 ? -80 : 80, scale: 0.8 }}
+      initial={{ opacity: 0, x: 0, scale: 0.8 }}
       animate={shouldAnimate ? 
         { opacity: 1, x: 0, scale: 1 } : 
-        { opacity: 0, x: index % 2 === 0 ? -80 : 80, scale: 0.8 }
+        { opacity: 0, x: 0, scale: 0.8 }
       }
       transition={{ 
         duration: 0.8, 

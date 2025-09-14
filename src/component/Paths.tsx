@@ -161,10 +161,10 @@ export default function Paths() {
                   <motion.div 
                     className="bg-white/15 backdrop-blur-sm rounded-2xl border border-white/20 transition-all duration-700 hover:bg-white/20 cursor-pointer"
                     onClick={() => toggleAccordion('card1', 'item1')}
-                    initial={{ opacity: 0, x: -20 }}
+                    initial={{ opacity: 0, x: 0 }}
                     animate={(hoveredCard === 1 || isMobile) && isInView ? 
                       { opacity: 1, x: 0 } : 
-                      { opacity: 0, x: -20 }
+                      { opacity: 0, x: 0 }
                     }
                     transition={{ duration: 0.7, delay: 0.1 }}
                     whileHover={{ scale: 1.02 }}
@@ -207,10 +207,10 @@ export default function Paths() {
                   <motion.div 
                     className="bg-white/15 backdrop-blur-sm rounded-2xl border border-white/20 transition-all duration-700 hover:bg-white/20 cursor-pointer"
                     onClick={() => toggleAccordion('card1', 'item2')}
-                    initial={{ opacity: 0, x: -20 }}
+                    initial={{ opacity: 0, x: 0 }}
                     animate={(hoveredCard === 1 || isMobile) && isInView ? 
                       { opacity: 1, x: 0 } : 
-                      { opacity: 0, x: -20 }
+                      { opacity: 0, x: 0 }
                     }
                     transition={{ duration: 0.7, delay: 0.2 }}
                     whileHover={{ scale: 1.02 }}
@@ -359,10 +359,10 @@ export default function Paths() {
                   <motion.div 
                     className="bg-white/15 backdrop-blur-sm rounded-2xl border border-white/20 transition-all duration-700 hover:bg-white/20 cursor-pointer"
                     onClick={() => toggleAccordion('card2', 'item1')}
-                    initial={{ opacity: 0, x: 20 }}
+                    initial={{ opacity: 0, x: 0 }}
                     animate={(hoveredCard === 2 || isMobile) && isInView ? 
                       { opacity: 1, x: 0 } : 
-                      { opacity: 0, x: 20 }
+                      { opacity: 0, x: 0 }
                     }
                     transition={{ duration: 0.7, delay: 0.1 }}
                     whileHover={{ scale: 1.02 }}
@@ -405,10 +405,10 @@ export default function Paths() {
                   <motion.div 
                     className="bg-white/15 backdrop-blur-sm rounded-2xl border border-white/20 transition-all duration-700 hover:bg-white/20 cursor-pointer"
                     onClick={() => toggleAccordion('card2', 'item2')}
-                    initial={{ opacity: 0, x: 20 }}
+                    initial={{ opacity: 0, x: 0 }}
                     animate={(hoveredCard === 2 || isMobile) && isInView ? 
                       { opacity: 1, x: 0 } : 
-                      { opacity: 0, x: 20 }
+                      { opacity: 0, x: 0 }
                     }
                     transition={{ duration: 0.7, delay: 0.2 }}
                     whileHover={{ scale: 1.02 }}

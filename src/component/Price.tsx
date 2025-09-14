@@ -58,7 +58,7 @@ export default function Price() {
           src="price start.svg" 
           alt="Prize" 
           className="w-full"
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 1.4 }}
         />
@@ -67,7 +67,7 @@ export default function Price() {
           src="price end.svg" 
           alt="Prize" 
           className="w-full my-10"
-          initial={{ opacity: 0, x: 100 }}
+          initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 1.6 }}
         />
@@ -127,7 +127,7 @@ const Card: React.FC<CardProps> = ({ title, desc }) => {
     >
       <motion.p 
         className="text-dark-green text-sm sm:text-base md:text-lg"
-        initial={{ opacity: 0, x: -10 }}
+        initial={{ opacity: 0, x: 0 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.4 }}
       >
@@ -135,7 +135,7 @@ const Card: React.FC<CardProps> = ({ title, desc }) => {
       </motion.p>
       <motion.p 
         className="text-dark-green text-sm sm:text-base md:text-lg"
-        initial={{ opacity: 0, x: -10 }}
+        initial={{ opacity: 0, x: 0 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.3, duration: 0.4 }}
       >

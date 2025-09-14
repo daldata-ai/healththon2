@@ -81,7 +81,7 @@ export default function Hero() {
             {/* Floating Action Buttons */}
             <motion.div 
                 className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-20 flex gap-3"
-                initial={{ x: 100, opacity: 0 }}
+                initial={{ x: 0, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 2, ease: "backOut" }}
             >
