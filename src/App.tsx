@@ -8,6 +8,7 @@ import Price from './component/Price'
 import Timeline from './component/Timeline'
 import TAndC from './component/TAndC'
 import TargetGroup from './component/TargetGroup'
+import FAQAccordion from './component/FAQAccordion'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <TAndC />
       <Timeline />
       <Price />
+      <FAQAccordion />
     </div>
   )
 }
