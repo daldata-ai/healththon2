@@ -16,9 +16,9 @@ export default function Goals() {
       />
       
       <motion.div 
-        className="w-1 h-[980px] bg-light-green"
+        className="w-1 h-[850px] bg-light-green"
         initial={{ height: 0 }}
-        animate={isInView ? { height: 980 } : { height: 0 }}
+        animate={isInView ? { height: 850 } : { height: 0 }}
         transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
       />
       
@@ -43,35 +43,35 @@ export default function Goals() {
       <Box 
         index={1} 
         description="تحليل أسباب الوفيات المبكرة القابلة للتفادي لتمكين صانعي القرار من استهدافها." 
-        className="top-[170px]"
+        className="top-[150px]"
         delay={0.8}
         containerInView={isInView}
       />
       <Box 
         index={2} 
         description="التنبؤ بالفئات الأكثر عرضة للمخاطر الصحية ودعم التدخل المبكر." 
-        className="top-[340px]"
+        className="top-[300px]"
         delay={1.0}
         containerInView={isInView}
       />
       <Box 
         index={3} 
         description='رفع الوعي المجتمعي بمفهوم "العمر الصحي" وتحفيز أنماط الحياة الصحية.' 
-        className="top-[510px]"
+        className="top-[450px]"
         delay={1.2}
         containerInView={isInView}
       />
       <Box 
         index={4} 
         description='توظيف البايوجينيتكس والبيانات الحيوية لإطالة العمر الصحي للأفراد.' 
-        className="top-[680px]"
+        className="top-[600px]"
         delay={1.4}
         containerInView={isInView}
       />
       <Box 
         index={5} 
         description='تحسين كفاءة الإنفاق الصحي بالتركيز على الوقاية وتقليل الضغط على المستشفيات.' 
-        className="top-[850px]"
+        className="top-[750px]"
         delay={1.6}
         containerInView={isInView}
       />

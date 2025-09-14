@@ -69,14 +69,14 @@ const Partners = () => {
       </motion.h1>
       
       <motion.div 
-        className="grid grid-cols-2 xs:grid-cols-3 gap-4 sm:gap-8 w-full max-w-2xl mx-auto"
+        className="grid grid-cols-2 xs:grid-cols-3 gap-4 sm:gap-8 w-full max-w-2xl mx-auto place-items-center"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
         <motion.img 
           src="partners/1.svg" 
-          className="h-16 xs:h-20 mx-auto w-auto max-w-[120px] xs:max-w-[160px]"
+          className="h-20 xs:h-24 mx-auto w-auto max-w-[140px] xs:max-w-[180px] sm:h-24 sm:max-w-[180px] md:h-28 md:max-w-[200px]"
           whileHover={{ 
             scale: 1.1, 
             rotate: 2,
@@ -85,7 +85,7 @@ const Partners = () => {
         />
         <motion.img 
           src="partners/2.png" 
-          className="h-20 xs:h-24 mx-auto w-auto max-w-[140px] xs:max-w-[180px]"
+          className="h-24 xs:h-28 mx-auto w-auto max-w-[160px] xs:max-w-[200px] sm:h-28 sm:max-w-[200px] md:h-32 md:max-w-[220px]"
           whileHover={{ 
             scale: 1.1, 
             rotate: -2,
@@ -94,7 +94,7 @@ const Partners = () => {
         />
         <motion.img 
           src="partners/3.svg" 
-          className="h-16 xs:h-20 mx-auto col-span-2 w-auto max-w-[120px] xs:max-w-[160px] md:col-span-1"
+          className="h-20 xs:h-24 mx-auto col-span-2 w-auto max-w-[140px] xs:max-w-[180px] sm:h-24 sm:max-w-[180px] md:h-28 md:max-w-[200px] sx:col-span-1"
           whileHover={{ 
             scale: 1.1, 
             rotate: 2,
@@ -145,7 +145,7 @@ const Supporters2 = () => {
       >
         <motion.img 
           src="sponsers/6.svg" 
-          className="h-28 xs:h-36 sm:h-40 mx-auto w-auto max-w-[200px] sm:max-w-[260px]"
+          className="h-32 xs:h-40 sm:h-44 mx-auto w-auto max-w-[220px] sm:max-w-[280px] md:h-48 md:max-w-[320px]"
           whileHover={{ 
             scale: 1.15, 
             y: -5,
@@ -186,7 +186,7 @@ const Supporters = () => {
         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 0 }}
         transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
       >
-        الداعمون
+        الرعاة
       </motion.h1>
       
       <motion.div 
@@ -197,7 +197,7 @@ const Supporters = () => {
       >
         <motion.img 
           src="sponsers/1.png" 
-          className="h-14 xs:h-20 mx-auto w-auto max-w-[100px] xs:max-w-[140px]"
+          className="h-18 xs:h-24 mx-auto w-auto max-w-[120px] xs:max-w-[160px] sm:h-24 sm:max-w-[160px] md:h-28 md:max-w-[180px]"
           whileHover={{ 
             scale: 1.15, 
             y: -5,
@@ -206,7 +206,7 @@ const Supporters = () => {
         />
         <motion.img 
           src="sponsers/2.svg" 
-          className="h-14 xs:h-20 mx-auto w-auto max-w-[100px] xs:max-w-[140px]"
+          className="h-18 xs:h-24 mx-auto w-auto max-w-[120px] xs:max-w-[160px] sm:h-24 sm:max-w-[160px] md:h-28 md:max-w-[180px]"
           whileHover={{ 
             scale: 1.15, 
             y: -5,
@@ -215,7 +215,7 @@ const Supporters = () => {
         />
         <motion.img 
           src="sponsers/3.png" 
-          className="h-12 xs:h-16 mx-auto w-auto max-w-[90px] xs:max-w-[120px] "
+          className="h-16 xs:h-20 mx-auto w-auto max-w-[110px] xs:max-w-[140px] sm:h-20 sm:max-w-[140px] md:h-24 md:max-w-[160px]"
           whileHover={{ 
             scale: 1.15, 
             y: -5,
@@ -224,7 +224,7 @@ const Supporters = () => {
         />
         <motion.img 
           src="sponsers/4.png" 
-          className="h-12 xs:h-16 mx-auto w-auto max-w-[90px] xs:max-w-[120px]"
+          className="h-16 xs:h-20 mx-auto w-auto max-w-[110px] xs:max-w-[140px] sm:h-20 sm:max-w-[140px] md:h-24 md:max-w-[160px]"
           whileHover={{ 
             scale: 1.15, 
             y: -5,
@@ -233,7 +233,7 @@ const Supporters = () => {
         />
         <motion.img 
           src="sponsers/5.svg" 
-          className="h-20 xs:h-28 mx-auto w-auto max-w-[120px] xs:max-w-[180px]"
+          className="h-24 xs:h-32 mx-auto w-auto max-w-[140px] xs:max-w-[200px] sm:h-32 sm:max-w-[200px] md:h-36 md:max-w-[220px]"
           whileHover={{ 
             scale: 1.15, 
             y: -5,
@@ -242,7 +242,7 @@ const Supporters = () => {
         />
         <motion.img 
           src="sponsers/7.svg" 
-          className="h-20 xs:h-28 mx-auto w-auto max-w-[120px] xs:max-w-[180px]"
+          className="h-24 xs:h-32 mx-auto w-auto max-w-[140px] xs:max-w-[200px] sm:h-32 sm:max-w-[200px] md:h-36 md:max-w-[220px]"
           whileHover={{ 
             scale: 1.15, 
             y: -5,
@@ -251,7 +251,7 @@ const Supporters = () => {
         />
         <motion.img 
           src="sponsers/8.svg" 
-          className="h-20 xs:h-28 mx-auto w-auto max-w-[120px] xs:max-w-[180px]"
+          className="h-24 xs:h-32 mx-auto w-auto max-w-[140px] xs:max-w-[200px] sm:h-32 sm:max-w-[200px] md:h-36 md:max-w-[220px]"
           whileHover={{ 
             scale: 1.15, 
             y: -5,
@@ -260,7 +260,7 @@ const Supporters = () => {
         />
         <motion.img 
           src="sponsers/9.svg" 
-          className="h-12 xs:h-16 mx-auto w-auto max-w-[90px] xs:max-w-[120px]"
+          className="h-16 xs:h-20 mx-auto w-auto max-w-[110px] xs:max-w-[140px] sm:h-20 sm:max-w-[140px] md:h-24 md:max-w-[160px]"
           whileHover={{ 
             scale: 1.15, 
             y: -5,

@@ -21,7 +21,7 @@ export default function TAndC() {
 
   return (
     <motion.main 
-      className="px-4 py-12 bg-inherit"
+      className="px-4 pb-6 bg-inherit"
     >
       {/* Title */}
       <motion.h1 

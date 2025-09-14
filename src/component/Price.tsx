@@ -63,15 +63,6 @@ export default function Price() {
           transition={{ duration: 0.8, delay: 1.4 }}
         />
         
-        <a href='https://t.me/+Bq7GmSlDY_liNGI8' >
-          <motion.img 
-          src="price end.svg" 
-          alt="Prize" 
-          className="w-full my-10"
-          initial={{ opacity: 0, x: 0 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 1.6 }}
-        /></a>
       </div>
     </div>
   )
