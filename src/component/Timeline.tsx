@@ -4,6 +4,7 @@ export default function Timeline() {
   return (
     <motion.div 
       className="bg-inherit p-4 w-full"
+      id='timeline'
     >
       <motion.div 
         className="lg:hidden"

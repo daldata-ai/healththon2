@@ -9,23 +9,34 @@ import Timeline from './component/Timeline'
 import TAndC from './component/TAndC'
 import TargetGroup from './component/TargetGroup'
 import FAQAccordion from './component/FAQAccordion'
+import SharePage from './component/SharePage'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="h-screen flex flex-col bg-default-bg">
-      <Header />
-      <div>
-        <Hero />
-      </div>
-      <About />
-      <Goals />
-      <Paths />
-      <TargetGroup />
-      <TAndC />
-      <Timeline />
-      <Price />
-      <FAQAccordion />
-    </div>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <Routes>
+        <Route path="/share/:id" element={<SharePage />} />
+        <Route path="/" element={
+          <div className="h-screen flex flex-col bg-default-bg">
+            <Header />
+            <div>
+              <Hero />
+            </div>
+            <About />
+            <Goals />
+            <Paths />
+            <TargetGroup />
+            <TAndC />
+            <Timeline />
+            <Price />
+            <FAQAccordion />
+          </div>
+        } />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

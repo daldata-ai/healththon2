@@ -6,7 +6,7 @@ export default function Goals() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <div ref={ref} className="relative flex flex-col items-center justify-center py-4 bg-inherit">
+    <div ref={ref} className="relative flex flex-col items-center justify-center py-4 bg-inherit" id="goals">
       {/* Animated timeline elements */}
       <motion.div 
         className="w-6 h-6 bg-light-green rounded-full"

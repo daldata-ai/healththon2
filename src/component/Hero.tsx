@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from 'react';
-import { Volume2, VolumeX, Send } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Send } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
@@ -13,8 +13,8 @@ export default function Hero() {
         seconds: 0
     });
 
-    const [isMuted, setIsMuted] = useState(true);
-    const videoRef = useRef<HTMLVideoElement>(null);
+    // const [isMuted, setIsMuted] = useState(true);
+    // const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
         const calculateTimeLeft = () => {
@@ -44,22 +44,22 @@ export default function Hero() {
         return () => clearInterval(timer);
     }, []);
 
-    const toggleMute = () => {
-        if (videoRef.current) {
-            videoRef.current.muted = !videoRef.current.muted;
-            setIsMuted(videoRef.current.muted);
-        }
-    };
+    // const toggleMute = () => {
+    //     if (videoRef.current) {
+    //         videoRef.current.muted = !videoRef.current.muted;
+    //         setIsMuted(videoRef.current.muted);
+    //     }
+    // };
 
     const handleTelegramClick = () => {
         // Replace with your actual Telegram group link
-        window.open('https://t.me/your_group_username', '_blank');
+        window.open('https://t.me/+Bq7GmSlDY_liNGI8', '_blank');
     };
 
     return (
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-screen overflow-hidden bg-dark-green">
             {/* Video Background */}
-            <motion.div 
+            {/* <motion.div 
                 className="absolute inset-0 z-0"
                 initial={{ scale: 1.1, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -76,7 +76,7 @@ export default function Hero() {
                     <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-            </motion.div>
+            </motion.div> */}
 
             {/* Floating Action Buttons */}
             <motion.div 
@@ -92,11 +92,11 @@ export default function Hero() {
                     aria-label="Join Telegram Group"
                 >
                     <Send className="w-4 h-4 sm:w-5 sm:h-5" />
-                    <span className="text-xs sm:text-sm font-medium">Join Group</span>
+                    <span className="text-xs sm:text-sm font-medium">كوًن فريفك</span>
                 </motion.button>
                 
                 {/* Mute Button */}
-                <motion.button
+                {/* <motion.button
                     onClick={toggleMute}
                     className="bg-black/20 bg-opacity-60 backdrop-blur-sm text-white p-2 sm:p-3 rounded-full hover:bg-opacity-80 transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 self-end"
                     aria-label={isMuted ? 'Unmute video' : 'Mute video'}
@@ -106,7 +106,7 @@ export default function Hero() {
                     ) : (
                         <Volume2 className="w-5 h-5 sm:w-6 sm:h-6" />
                     )}
-                </motion.button>
+                </motion.button> */}
             </motion.div>
 
             {/* Content */}
@@ -229,7 +229,7 @@ export default function Hero() {
                 <motion.img 
                     src="hash.svg" 
                     alt="Hashtag" 
-                    className="h-8 sm:h-10 md:h-12 w-auto"
+                className="h-8 sm:h-10 md:h-12 w-auto backdrop-blur-sm rounded-b-2xl m-2 bg-white/90"
                     animate={{ 
                         y: [0, -10, 0],
                         rotate: [0, 2, -2, 0]

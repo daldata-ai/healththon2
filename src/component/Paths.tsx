@@ -8,7 +8,7 @@ export default function Paths() {
   const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
   
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-300px" });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   useEffect(() => {
     const checkMobile = () => {
@@ -33,6 +33,7 @@ export default function Paths() {
     <motion.div 
       ref={ref}
       className="bg-inherit p-4 sm:p-8"
+      id="path"
       initial={{ opacity: 100}}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >

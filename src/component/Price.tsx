@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function Price() {
   return (
-    <div className='bg-inherit pt-4'>
+    <div className='bg-inherit pt-4' id='prices'>
       <div className="text-center">
         <motion.h1 
           className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-dark-green mb-2"
@@ -63,14 +63,15 @@ export default function Price() {
           transition={{ duration: 0.8, delay: 1.4 }}
         />
         
-        <motion.img 
+        <a href='https://t.me/+Bq7GmSlDY_liNGI8' >
+          <motion.img 
           src="price end.svg" 
           alt="Prize" 
           className="w-full my-10"
           initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 1.6 }}
-        />
+        /></a>
       </div>
     </div>
   )

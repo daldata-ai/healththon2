@@ -62,7 +62,7 @@ const FAQAccordion: React.FC = () => {
 
   return (
     <motion.div 
-      className='bg-inherit px-6 py-12 mx-auto w-full'
+      className='bg-inherit px-6 py-12 mx-auto w-full' id='faq'
     >
       <div className='max-w-4xl mx-auto'>
         <motion.h1 
