@@ -61,10 +61,10 @@ export default function Paths() {
           className="relative rounded-3xl text-white cursor-pointer overflow-hidden shadow-2xl transition-all duration-1000 ease-in-out min-h-[400px] sm:min-h-0 sm:h-auto"
           onMouseEnter={() => !isMobile && setHoveredCard(1)}
           onMouseLeave={() => !isMobile && setHoveredCard(null)}
-          initial={{ opacity: 0, x: -100, scale: 0.9 }}
+          initial={{ opacity: 0, x: 0, scale: 0.9 }}
           animate={isInView ? 
             { opacity: 1, x: 0, scale: 1 } : 
-            { opacity: 0, x: -100, scale: 0.9 }
+            { opacity: 0, x: 0, scale: 0.9 }
           }
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           whileHover={!isMobile ? { 
@@ -259,10 +259,10 @@ export default function Paths() {
           className="relative rounded-3xl text-white cursor-pointer overflow-hidden shadow-2xl transition-all duration-1000 ease-in-out min-h-[400px] sm:min-h-0 sm:h-auto"
           onMouseEnter={() => !isMobile && setHoveredCard(2)}
           onMouseLeave={() => !isMobile && setHoveredCard(null)}
-          initial={{ opacity: 0, x: 100, scale: 0.9 }}
+          initial={{ opacity: 0, x: 0, scale: 0.9 }}
           animate={isInView ? 
             { opacity: 1, x: 0, scale: 1 } : 
-            { opacity: 0, x: 100, scale: 0.9 }
+            { opacity: 0, x: 0, scale: 0.9 }
           }
           transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
           whileHover={!isMobile ? { 

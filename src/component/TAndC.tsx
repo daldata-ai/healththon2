@@ -16,21 +16,6 @@ export default function TAndC() {
       id: 3,
       number: "٣",
       text: "الانضمام إلى سيرفر ديسكورد الخاص بالداتاثون الصحي والذي سيُرسل عبر البريد الإلكتروني للمقبولين."
-    },
-    {
-      id: 4,
-      number: "٤",
-      text: "Commitment to attend all scheduled activities and workshops during the event period."
-    },
-    {
-      id: 5,
-      number: "٥",
-      text: "أن يتكون الفريق من ٣ أعضاء كحد أدنى و٥ أعضاء كحد أقصى."
-    },
-    {
-      id: 6,
-      number: "٦",
-      text: "أن يتكون الفريق من ٣ أعضاء كحد أدنى و٥ أعضاء كحد أقصى."
     }
   ];
 

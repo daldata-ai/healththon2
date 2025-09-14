@@ -90,11 +90,6 @@ export default function Hero() {
                     onClick={handleTelegramClick}
                     className="bg-blue-500 bg-opacity-80 backdrop-blur-sm text-white px-3 py-2 sm:px-4 sm:py-3 rounded-full hover:bg-blue-600 hover:bg-opacity-90 transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 flex items-center gap-2 shadow-lg"
                     aria-label="Join Telegram Group"
-                    whileHover={{ scale: 1.1, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: 0.4, delay: 2.2, type: "spring", stiffness: 200 }}
                 >
                     <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                     <span className="text-xs sm:text-sm font-medium">Join Group</span>
@@ -105,11 +100,6 @@ export default function Hero() {
                     onClick={toggleMute}
                     className="bg-black/20 bg-opacity-60 backdrop-blur-sm text-white p-2 sm:p-3 rounded-full hover:bg-opacity-80 transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 self-end"
                     aria-label={isMuted ? 'Unmute video' : 'Mute video'}
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    whileTap={{ scale: 0.9 }}
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: 0.4, delay: 2.4, type: "spring", stiffness: 200 }}
                 >
                     {isMuted ? (
                         <VolumeX className="w-5 h-5 sm:w-6 sm:h-6" />
