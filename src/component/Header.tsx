@@ -84,7 +84,6 @@ export default function Component() {
                         style={{ backgroundColor: "#125662" }}
                     >
                         <a href="#" className="pt-6">
-                            <img src="logo-white.svg" alt="Logo" className="h-14 px-8" />
                             <img src="logo-white.svg" alt="شعار الداتاثون الصحي" className="h-14 px-8" />
                         </a>
                         <div className="grid gap-2 px-8">
@@ -112,32 +111,8 @@ export default function Component() {
                 </Sheet>
 
                 <Link href="#" className="hidden lg:flex" prefetch={false}>
-                    <img src="logo-white.svg" alt="Logo" className="h-14" />
                     <img src="logo-white.svg" alt="شعار الداتاثون الصحي" className="h-14" />
                 </Link>
-
-                <NavigationMenu className="hidden lg:flex bg-transparent mx-auto">
-                    <NavigationMenuList>
-                        {[
-                            { href: "#faq", label: "الأسئلة الشائعة" },
-                            { href: "#timeline", label: "الجدول الزمني" },
-                            { href: "#path", label: "المسارات والتحديات" },
-                            { href: "#prices", label: "الجوائز" },
-                            { href: "#goals", label: "الأهداف" },
-                            { href: "#aboutus", label: "عن الداتاثون" },
-                        ].map((item) => (
-                            <NavigationMenuLink asChild key={item.href}>
-                                <Link
-                                    href={item.href}
-                                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-xs sm:text-sm md:text-base font-medium text-white transition-colors hover:bg-light-green focus:bg-white/10 focus:outline-none disabled:pointer-events-none disabled:opacity-50"
-                                    prefetch={false}
-                                >
-                                    {item.label}
-                                </Link>
-                            </NavigationMenuLink>
-                        ))}
-                    </NavigationMenuList>
-                </NavigationMenu>
                 <nav aria-label="Main navigation">
                     <NavigationMenu className="hidden lg:flex bg-transparent mx-auto">
                         <NavigationMenuList>

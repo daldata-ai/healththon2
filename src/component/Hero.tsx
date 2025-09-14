@@ -120,8 +120,8 @@ export default function Hero() {
                 >
                     <div className="flex items-center justify-center">
                         <motion.img 
-                            src='logo-white.svg' 
-                            alt='Logo' 
+                            src='logo-white.svg'
+                            alt='شعار الداتاثون الصحي'
                             className='h-24 sm:h-32 md:h-40 w-auto' 
                             whileHover={{ scale: 1.05, rotate: 1 }}
                             transition={{ duration: 0.3 }}

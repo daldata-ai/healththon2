@@ -51,7 +51,7 @@ export default function Price() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
         >
-          <img src='bef.svg' alt='bet' className='w-full mx-auto max-w-4xl' />
+          <img src='bef.svg' alt='مزايا إضافية للمشاركين' className='w-full mx-auto max-w-4xl' />
         </motion.div>
         
         <motion.img 
@@ -164,8 +164,8 @@ const ComplatePage: React.FC<ComplatePageProps> = ({ title, desc, desc2 }) => {
 const Image = () => {
   return (
     <motion.img 
-      src="prices.svg" 
-      alt="Prize" 
+      src="prices.svg"
+      alt="جوائز مالية"
       className="w-3/4 sm:w-2/3 pt-8 max-w-[500px]"
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
