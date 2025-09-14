@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 export default function SharePage() {
   const { id } = useParams();
   const [copied, setCopied] = useState(false);
-  const shareUrl = `${window.location.origin}/${id || ''}`;
+  const shareUrl = `https://forms.fillout.com/t/f1mxoSvUiBus?unique_id=${id || ''}`;
 
   const handleCopy = async () => {
     try {

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { getHumanReadableId } from '../lib/unique_id';
 import { Menu, Share2 } from 'lucide-react';
 import { Sheet, SheetTrigger, SheetContent } from "../components/ui/sheet";
 import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "../components/ui/navigation-menu";
@@ -22,7 +23,8 @@ export default function Component() {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [teamId, setTeamId] = useState<string | null>(null);
-
+    const unique_id = getHumanReadableId();
+    const form_link = `https://forms.fillout.com/t/f1mxoSvUiBus?unique_id=${unique_id}&new=true`;
     useEffect(() => {
         const storedTeamId = localStorage.getItem('teamId');
         setTeamId(storedTeamId);
@@ -146,9 +148,11 @@ export default function Component() {
                             رابط الدعوة
                         </Link>
                     )}
-                    <Button className="bg-light-green hover:bg-light-green/90 text-black" style={{ backgroundColor: '#afd57f' }}>
-                        تسجيل
-                    </Button>
+                    <a href={form_link} target="_blank" rel="noopener noreferrer">
+                        <Button className="bg-light-green hover:bg-light-green/90 text-black" style={{ backgroundColor: '#afd57f' }} >
+                            سجل الان
+                        </Button>
+                    </a>
                 </div>
             </header>
         </>

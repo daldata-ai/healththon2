@@ -92,7 +92,7 @@ export default function Hero() {
                     aria-label="Join Telegram Group"
                 >
                     <Send className="w-4 h-4 sm:w-5 sm:h-5" />
-                    <span className="text-xs sm:text-sm font-medium">كوًن فريفك</span>
+                    <span className="text-xs sm:text-sm font-medium">كوًن فريقك</span>
                 </motion.button>
                 
                 {/* Mute Button */}

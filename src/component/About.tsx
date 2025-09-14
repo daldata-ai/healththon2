@@ -37,7 +37,7 @@ const AboutUs = () => {
 const Partners = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
-
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -49,17 +49,15 @@ const Partners = () => {
     }
   };
 
-
-
   return (
-    <motion.div 
+    <motion.div
       ref={ref}
       className='flex flex-col items-center justify-center gap-y-4 py-10 text-white px-4 text-center'
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <motion.h1 
+      <motion.h1
         className="text-dark-green text-xl sm:text-2xl md:text-3xl lg:text-3xl mb-8 font-bold"
         initial={{ opacity: 0, x: 0 }}
         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 0 }}
@@ -67,38 +65,38 @@ const Partners = () => {
       >
         الشركاء
       </motion.h1>
-      
-      <motion.div 
-        className="grid grid-cols-2 xs:grid-cols-3 gap-4 sm:gap-8 w-full max-w-2xl mx-auto place-items-center"
+
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-8 w-full max-w-4xl mx-auto"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <motion.img 
-          src="partners/1.svg" 
-          className="h-20 xs:h-24 mx-auto w-auto max-w-[140px] xs:max-w-[180px] sm:h-24 sm:max-w-[180px] md:h-28 md:max-w-[200px]"
-          whileHover={{ 
-            scale: 1.1, 
+        <motion.img
+          src="partners/3.svg"
+          className="h-20 w-auto max-w-[140px] sm:h-24 sm:max-w-[180px] md:h-28 md:max-w-[200px] px-9"
+          whileHover={{
+            scale: 1.1,
             rotate: 2,
-            transition: { duration: 0.3 } 
+            transition: { duration: 0.3 }
           }}
         />
-        <motion.img 
-          src="partners/2.png" 
-          className="h-24 xs:h-28 mx-auto w-auto max-w-[160px] xs:max-w-[200px] sm:h-28 sm:max-w-[200px] md:h-32 md:max-w-[220px]"
-          whileHover={{ 
-            scale: 1.1, 
+        <motion.img
+          src="partners/2.png"
+          className="h-24 w-auto max-w-[160px] sm:h-28 sm:max-w-[200px] md:h-32 md:max-w-[220px] px-9 pr-7"
+          whileHover={{
+            scale: 1.1,
             rotate: -2,
-            transition: { duration: 0.3 } 
+            transition: { duration: 0.3 }
           }}
         />
-        <motion.img 
-          src="partners/3.svg" 
-          className="h-20 xs:h-24 mx-auto col-span-2 w-auto max-w-[140px] xs:max-w-[180px] sm:h-24 sm:max-w-[180px] md:h-28 md:max-w-[200px] sx:col-span-1"
-          whileHover={{ 
-            scale: 1.1, 
+        <motion.img
+          src="partners/1.svg"
+          className="h-20 w-auto max-w-[140px] sm:h-24 sm:max-w-[180px] md:h-28 md:max-w-[200px]"
+          whileHover={{
+            scale: 1.1,
             rotate: 2,
-            transition: { duration: 0.3 } 
+            transition: { duration: 0.3 }
           }}
         />
       </motion.div>
