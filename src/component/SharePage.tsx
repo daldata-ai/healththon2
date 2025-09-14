@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function SharePage() {
   const { id } = useParams();
@@ -32,6 +33,11 @@ export default function SharePage() {
   };
 
   return (
+    <>
+    <Helmet>
+        <title>دعوة فريق - الداتاثون الصحي</title>
+        <meta name="description" content="انضم إلى فريقي في الداتاثون الصحي. شارك الرابط مع أعضاء فريقك." />
+    </Helmet>
   <div className="min-h-screen bg-dark-green flex items-center justify-center p-6 border-t-4 border-b-4 border-light-green">
       <div className="text-center max-w-md w-full">
         {/* Header */}
@@ -89,5 +95,6 @@ export default function SharePage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
