@@ -24,7 +24,7 @@ export default function Component() {
     const [lastScrollY, setLastScrollY] = useState(0);
     const [teamId, setTeamId] = useState<string | null>(null);
     const unique_id = getHumanReadableId();
-    const form_link = `https://forms.fillout.com/t/f1mxoSvUiBus?unique_id=${unique_id}&new=true`;
+    const form_link = `https://healthdatathon.fillout.com/t/f1mxoSvUiBus?unique_id=${unique_id}&new=true`;
     useEffect(() => {
         const storedTeamId = localStorage.getItem('teamId');
         setTeamId(storedTeamId);
@@ -85,6 +85,7 @@ export default function Component() {
                     >
                         <a href="#" className="pt-6">
                             <img src="logo-white.svg" alt="Logo" className="h-14 px-8" />
+                            <img src="logo-white.svg" alt="شعار الداتاثون الصحي" className="h-14 px-8" />
                         </a>
                         <div className="grid gap-2 px-8">
                             <Link href="#aboutus" className="flex w-full items-center py-2 text-base sm:text-lg font-semibold text-white" prefetch={false}>
@@ -112,6 +113,7 @@ export default function Component() {
 
                 <Link href="#" className="hidden lg:flex" prefetch={false}>
                     <img src="logo-white.svg" alt="Logo" className="h-14" />
+                    <img src="logo-white.svg" alt="شعار الداتاثون الصحي" className="h-14" />
                 </Link>
 
                 <NavigationMenu className="hidden lg:flex bg-transparent mx-auto">
@@ -136,6 +138,30 @@ export default function Component() {
                         ))}
                     </NavigationMenuList>
                 </NavigationMenu>
+                <nav aria-label="Main navigation">
+                    <NavigationMenu className="hidden lg:flex bg-transparent mx-auto">
+                        <NavigationMenuList>
+                            {[
+                                { href: "#faq", label: "الأسئلة الشائعة" },
+                                { href: "#timeline", label: "الجدول الزمني" },
+                                { href: "#path", label: "المسارات والتحديات" },
+                                { href: "#prices", label: "الجوائز" },
+                                { href: "#goals", label: "الأهداف" },
+                                { href: "#aboutus", label: "عن الداتاثون" },
+                            ].map((item) => (
+                                <NavigationMenuLink asChild key={item.href}>
+                                    <Link
+                                        href={item.href}
+                                        className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-xs sm:text-sm md:text-base font-medium text-white transition-colors hover:bg-light-green focus:bg-white/10 focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                                        prefetch={false}
+                                    >
+                                        {item.label}
+                                    </Link>
+                                </NavigationMenuLink>
+                            ))}
+                        </NavigationMenuList>
+                    </NavigationMenu>
+                </nav>
 
                 <div className="mr-auto flex gap-2 justify-center items-center">
                     {teamId && (
