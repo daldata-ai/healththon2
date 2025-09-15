@@ -93,7 +93,7 @@ const Partners = () => {
           }}
         />
         <motion.img
-          src="partners/1.svg"
+          src="partners/1.png"
           alt="شعار الشريك: دال"
           className="h-20 w-auto max-w-[140px] sm:h-24 sm:max-w-[180px] md:h-28 md:max-w-[200px]"
           whileHover={{
