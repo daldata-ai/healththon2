@@ -418,7 +418,7 @@ export default function Paths() {
                     <div className="p-3 sm:p-4">
                       <div className="flex items-center justify-between">
                         <span className="text-xs sm:text-sm leading-relaxed mr-2 font-medium">
-                          التنبؤ المبكر بخطر وفيات الأجنة باستخدام علم الجينات
+                           تطوير مؤشر ذكي للعمر الصحي باستخدام المؤشرات الحيوية
                         </span>
                         <motion.div
                           animate={{ rotate: expandedItems['card2-item2'] ? 180 : 0 }}
