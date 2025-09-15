@@ -19,7 +19,6 @@ export default function Timeline() {
       >
         <h1 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-dark-green">الجدول الزمني</h1>
       </motion.div>
-      
       <motion.picture
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}

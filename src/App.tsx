@@ -81,9 +81,9 @@ function App() {
                   transition={{ duration: 0.8, delay: 1.6 }}
                 />
               </a>
-              <TAndC />
-              <Timeline />
               <Price />
+              <Timeline />
+              <TAndC />
               <FAQAccordion />
             </div>
           </>

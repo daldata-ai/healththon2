@@ -124,7 +124,7 @@ const Supporters2 = () => {
   return (
     <motion.div 
       ref={ref}
-      className='flex flex-col items-center justify-center gap-y-4 py-10 text-white px-4 text-center'
+      className='flex flex-col items-center justify-center text-white px-4 text-center'
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -139,7 +139,7 @@ const Supporters2 = () => {
       </motion.h1>
       
       <motion.div 
-        className="grid grid-cols-1 place-items-center"
+        className="grid grid-cols-1 place-items-center py-10"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -147,7 +147,7 @@ const Supporters2 = () => {
         <motion.img 
           src="sponsers/6.svg" 
           alt="شعار الراعي الاستراتيجي"
-          className="h-32 xs:h-40 sm:h-44 mx-auto w-auto max-w-[220px] sm:max-w-[280px] md:h-48 md:max-w-[320px]"
+          className="h-22 mx-auto w-auto max-w-[220px] sm:max-w-[280px] md:h-24 md:max-w-[320px]"
           whileHover={{ 
             scale: 1.15, 
             y: -5,
@@ -177,13 +177,13 @@ const Supporters = () => {
   return (
     <motion.div 
       ref={ref}
-      className='flex flex-col items-center justify-center gap-y-4 py-10 text-white px-4 text-center'
+      className='flex flex-col items-center justify-center gap-y-4 text-white px-4 text-center'
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <motion.h1 
-        className="text-dark-green text-xl sm:text-2xl md:text-3xl lg:text-3xl mb-8 font-bold"
+        className="text-dark-green text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold"
         initial={{ opacity: 0, x: 0 }}
         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 0 }}
         transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}

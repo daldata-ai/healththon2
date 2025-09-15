@@ -89,6 +89,7 @@ export default function Hero() {
                 <motion.button
                     onClick={handleTelegramClick}
                     className="bg-blue-500 bg-opacity-80 backdrop-blur-sm text-white px-3 py-2 sm:px-4 sm:py-3 rounded-full hover:bg-blue-600 hover:bg-opacity-90 transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 flex items-center gap-2 shadow-lg"
+                    style={{ backgroundColor: 'var(--color-blue, #3b82f6)', color: '#fff', borderColor: 'var(--color-blue, #3b82f6)' }}
                     aria-label="Join Telegram Group"
                 >
                     <Send className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -153,7 +154,7 @@ export default function Hero() {
                         >
                             {timeLeft.days.toString().padStart(2, '0')}
                         </motion.div>
-                        <div className="text-xs sm:text-sm text-gray-300">أيام</div>
+                        <div className="text-xs sm:text-sm text-gray-300">يوم</div>
                     </motion.div>
 
                     {/* Hours */}
@@ -220,7 +221,7 @@ export default function Hero() {
 
             {/* Hashtag positioned at bottom of screen */}
             <motion.div 
-                className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+                className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10"
                 initial={{ opacity: 0, y: 50, scale: 0.8 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 2.5, ease: "backOut" }}

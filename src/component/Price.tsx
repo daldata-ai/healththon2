@@ -26,12 +26,6 @@ export default function Price() {
           />
         </motion.div>
         
-        <motion.div 
-          className="w-4/5 border-b-2 border-dark-green/30 my-5 mx-auto"
-          initial={{ scaleX: 0 }}
-          animate={{ scaleX: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        />
         
         <motion.div
           initial={{ opacity: 0, y: 50 }}
