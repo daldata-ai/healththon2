@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
@@ -6,7 +6,11 @@ export default function SharePage() {
   const { id } = useParams();
   const [copied, setCopied] = useState(false);
   const shareUrl = `https://healthdatathon.fillout.com/t/f1mxoSvUiBus?unique_id=${id}&new=false`;
-
+  useEffect(() => {
+    if (id) {
+      localStorage.setItem('teamId', id);
+    }
+  }, [id]);
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(shareUrl);
