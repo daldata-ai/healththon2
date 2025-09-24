@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
     // Set your target date here (YYYY-MM-DD format)
-    const TARGET_DATE = new Date('2025-09-27T00:00:00+03:00');
+    const TARGET_DATE = new Date('2025-09-28T00:00:00+03:00');
     
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
